@@ -1,0 +1,121 @@
+body{
+    background-color: #ccc;
+}
+/* This is wrapper  */
+#main{
+    background-color: #404040;
+    width: 80vw;
+    /* height: 80vh; */
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid purple;
+}
+
+/* clearing after wrapper */
+#main::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* this is header and information part */
+#info{
+    float:left;
+    width: 45%; 
+    margin: 1%;
+    padding: 1%;
+    border: 3px solid purple;
+
+}
+#tribute-info{
+    width: 90%;
+    border: 3px solid purple;
+}
+#tribute-info p{
+    text-align: justify;
+    border: 3px solid purple;
+}
+#small-img img{
+    float:left;
+    width: 20%; 
+    /* height: auto; */
+    margin: 0 auto;
+    padding: 1%;
+    border: 3px solid green;
+}
+
+/* this is a picture and a caption for it */
+#img-div{
+    width: 45%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    max-height: fit-content;
+    float: left;
+    border: 3px solid blue;
+}
+
+
+/* this is to resume normal doc flow */
+#main div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 
+Center img in parent and make it responsive */
+#image {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+/* MEDIA QUERIES */
+
+/* FOR TABLET DEVICES */
+@media screen and (max-width:768px){
+    #main{
+        max-width: 768px;
+    }
+
+    #img-div{
+        width: 90%;
+    }
+
+    #info{
+        width: 90%; 
+
+    }
+
+    #small-img img{
+        width: 45%;
+    }
+}
+
+/* FOR MOBILE DEVICES */
+@media screen and (max-width:480px){
+    #main{
+        /* background-color: #fff; */
+        max-width: 480px;
+        /* margin: 0 auto;
+        padding: 20px; */
+    }
+
+    /* #img-div{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        text-align: center;
+        max-height: fit-content;
+    } */
+
+    /* #info{
+        width: 100%; 
+        margin: 1%;
+        padding: 1%;
+    } */
+
+    #small-img img{
+        width: 92%;
+    }
+}
