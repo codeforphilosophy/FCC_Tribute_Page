@@ -1,14 +1,99 @@
 body{
     background-color: #ccc;
+    font-size: 1.125rem;
+    /* to ger rid of extra spacing around nav add margin 0 */
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+/* -----------
+Typografy
+-------------- */
+
+h1{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    /* letter-spacing: 12px;
+    word-spacing: 20px; */
+}
+.subtitles{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    color: #1792D2;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+
+/* -----------
+Layout
+-------------- */
+header{
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 2em 0;
+}
+
+/* -Nav bar-*/
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    /* width: 60%; */
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list-item{
+    /* padding: 0; */
+    margin: 0 1em;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #707070;
+    padding: .25em 0;
+    /* letter-spacing: 2px; */
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: #1792D2;
+}
+.current-page{
+    border-bottom: 1px solid #707070;;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
 /* This is wrapper  */
 #main{
     background-color: #404040;
-    width: 80vw;
-    /* height: 80vh; */
+    width: 90%;
     margin: 0 auto;
-    padding: 20px;
-    border: 3px solid purple;
+    /* padding: 20px; */
+    /* border: 3px solid purple; */
+    text-align: center;
 }
 
 /* clearing after wrapper */
@@ -24,16 +109,19 @@ body{
     width: 45%; 
     margin: 1%;
     padding: 1%;
-    border: 3px solid purple;
-
+    /* border: 3px solid purple; */
+    
 }
 #tribute-info{
     width: 90%;
-    border: 3px solid purple;
+    max-width: 520px;
+    /* border: 3px solid purple; */
+    margin: 0 auto;
 }
 #tribute-info p{
     text-align: justify;
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
+    
 }
 #small-img img{
     float:left;
@@ -41,7 +129,7 @@ body{
     /* height: auto; */
     margin: 0 auto;
     padding: 1%;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 /* this is a picture and a caption for it */
@@ -50,9 +138,9 @@ body{
     margin: 1%;
     padding: 1%;
     text-align: center;
-    max-height: fit-content;
+    /* max-height: fit-content; */
     float: left;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 
@@ -68,54 +156,52 @@ Center img in parent and make it responsive */
     display: block;
     max-width: 80%;
     margin: 0 auto;
-  }
+}
 
 /* MEDIA QUERIES */
 
 /* FOR TABLET DEVICES */
-@media screen and (max-width:768px){
-    #main{
-        max-width: 768px;
-    }
 
+@media screen and (max-width:768px){
+    /* #main{
+        max-width: 768px;
+    } */
+    
     #img-div{
         width: 90%;
     }
-
+    
     #info{
         width: 90%; 
-
+        
     }
-
+    
     #small-img img{
         width: 45%;
     }
-}
+} 
 
 /* FOR MOBILE DEVICES */
+
 @media screen and (max-width:480px){
-    #main{
-        /* background-color: #fff; */
+    /* #main{
+        background-color: #fff;
         max-width: 480px;
-        /* margin: 0 auto;
-        padding: 20px; */
+        margin: 0 auto;
+        padding: 20px;
+    } */
+    
+    #img-div{
+        width: 98%;
     }
-
-    /* #img-div{
-        width: 100%;
-        margin: 1%;
-        padding: 1%;
-        text-align: center;
-        max-height: fit-content;
-    } */
-
-    /* #info{
-        width: 100%; 
-        margin: 1%;
-        padding: 1%;
-    } */
-
+    
+    #info{
+        width: 98%;
+    }
+    
     #small-img img{
         width: 92%;
+        float: none;
     }
-}
+} 
+
