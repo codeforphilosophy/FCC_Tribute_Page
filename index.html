@@ -7,61 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"></head>
-<body>
-    <header>
-        <div class="container container-nav ">
-            <div class="title">
-                <h1>Meet the artist: Andy Warhol</h1>
-                <p class="subtitles">a blog exploring the artist</p>
+    <body>
+        <header>
+            <div class="container container-nav ">
+                <div class="title">
+                    <h1>Meet the artist: Andy Warhol</h1>
+                    <p class="subtitles">a blog exploring the artist</p>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a class="nav-link current-page" href="#">Home</a></li>
+                        <li class="nav-list-item"><a class="nav-link " href="#">About Me</a></li>
+                        <li class="nav-list-item"><a class="nav-link " href="#">Rescent Posts</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a class="nav-link current-page" href="#">Home</a></li>
-                    <li class="nav-list-item"><a class="nav-link " href="#">About Me</a></li>
-                    <li class="nav-list-item"><a class="nav-link " href="#">Rescent Posts</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <main role= 'main' id="main container"></main>
-    <aside></aside>
-
-    <div id="main container">
-        <div id="img-div">
-            <!-- The img element should be centered within its parent element. -->
-            <!-- The img element should responsively resize, relative to the width of its parent element, without exceeding its original size. -->
-            <img src="style/assets/Andy-Warhol.jpg" alt="a picture of Andy Warhol" id="image">
-            <div id="img-caption">What could be better than a canned soup?</div>
-        </div>
-        <div id="info">
+        </header>
         
-            <h2 id="title">Eat Like Warhol</h2>
-            <div id="tribute-info">
-                <p >In the late 1950s, Warhol began devoting more attention to painting, and in 1961, he debuted the concept of "pop art" — paintings that focused on mass-produced commercial goods. In 1962, he exhibited the now-iconic paintings of Campbell's soup cans. These small canvas works of everyday consumer products created a major stir in the art world, bringing both Warhol and pop art into the national spotlight for the first time.</p>
-                <p> British artist Richard Hamilton described pop art as "popular, transient, expendable, low cost, mass-produced, young, witty, sexy, gimmicky, glamorous, big business." As Warhol himself put it, "Once you 'got' pop, you could never see a sign the same way again. And once you thought pop, you could never see America the same way again.</p>
-                <p>"Warhol's other famous pop paintings depicted Coca-cola bottles, vacuum cleaners and hamburgers</p>
-                <a href="#" id="tribute-link" target="_blank">her will be a link</a>
-            </div> 
-            <hr>
-            <div id="small-img">
-                <img src="style/assets/colabottle.jpg" alt="Coca cola bottles by Andy Warhol">
-                <p>Coca-Cola’s relationship with Andy Warhol began in 1962, when he began using the iconic Coca-Cola bottle in his pop art. Warhol’s use of the Coke bottle came at a time when he was establishing himself as an artist and he used the bottle as inspiration to develop his own identity.
-                One of his first Coca-Cola inspired artworks was named ‘Green Coca-Cola Bottles’ which featured 112 empty green glass Coke bottles in 7 rows of 16, with the Coca Cola logo featured at the bottom of the painting.</p> <a href="https://www.coca-colacompany.com/au/faqs/whats-the-history-behind-andy-warhols-coca-cola-bottle-painting">Read More</a>
-
-
-                <img src="style/assets/soup-cans.jpg" alt="soup cans by Andy Warhol">
-                <p>Andy Warhol famously appropriated familiar images from consumer culture and mass media, among them celebrity and tabloid news photographs, comic strips, and, in this work, the widely consumed canned soup made by the Campbell’s Soup Company. When he first exhibited Campbell’s Soup Cans in 1962, the canvases were displayed together on shelves, like products in a grocery aisle. At the time, Campbell’s sold 32 soup varieties; each one of Warhol’s 32 canvases corresponds to a different flavor. (The first flavor the company introduced, in 1897, was tomato).
-                Though Campbell’s Soup Cans resembles the mass-produced, printed advertisements by which Warhol was inspired, its canvases are hand-painted, and the fleur de lys pattern ringing each can’s bottom edge is hand-stamped. Warhol mimicked the repetition and uniformity of advertising by carefully reproducing the same image across each individual canvas. He varied only the label on the front of each can, distinguishing them by their variety. Warhol said of Campbell’s soup, “I used to drink it. I used to have the same lunch every day, for 20 years, I guess, the same thing over and over again.” </p> <a href="https://www.moma.org/learn/moma_learning/andy-warhol-campbells-soup-cans-1962/">Read More</a>
-                <img src="style/assets/marilyn.jpg" alt="soup cans by Andy Warhol">
-                <p>The Marilyn Diptych (1962) is a silkscreen painting by American pop artist Andy Warhol depicting Marilyn Monroe. The piece is one of the artist's most noted works. It is in the collection of the Tate.</p> <a href="https://en.wikipedia.org/wiki/Marilyn_Diptych">Read More</a>
+        
+        
+        <div id="main" class="container">
+            <main role= 'main'>
+                <article class="article-featured">
+                    <h2 id="title" class="article-title">Eat Like Warhol</h2>
+                    <div id="img-div">
+                        <img src="style/assets/Andy-Warhol.jpg" alt="a picture of Andy Warhol" id="image" class="article-img">
+                        <div id="img-caption" class="article-info">What could be better than a canned soup?</div>
+                        <p id="tribute-info" class="article-body">In the late 1950s, Warhol began devoting more attention to painting, and in 1961, he debuted the concept of "pop art" — paintings that focused on mass-produced commercial goods. In 1962, he exhibited the now-iconic paintings of Campbell's soup cans. These small canvas works of everyday consumer products created a major stir in the art world, bringing both Warhol and pop art into the national spotlight for the first time.</p>
+                        <a href="#" id="tribute-link" target="_blank" class="article-read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="article-recent">
+                    <div class="article-recent-main">
+                        <h2 class="article-title"></h2>
+                        <p class="article-body"></p>
+                        <a href="" class="article-read-more"></a>
+                    </div>
+                    <div class="article-recent-secondary">
+                        <img src="" alt="" class="article-img">
+                        <p class="article-info"></p>
+                    </div>
+                </article>
+                <article class="article-recent">
+                    <div class="article-recent-main">
+                        <h2 class="article-title"></h2>
+                        <p class="article-body"></p>
+                        <a href="" class="article-read-more"></a>
+                    </div>
+                    <div class="article-recent-secondary">
+                        <img src="" alt="" class="article-img">
+                        <p class="article-info"></p>
+                    </div>
+                </article>
+                <article class="article-recent">
+                    <div class="article-recent-main">
+                        <h2 class="article-title"></h2>
+                        <p class="article-body"></p>
+                        <a href="" class="article-read-more"></a>
+                    </div>
+                    <div class="article-recent-secondary">
+                        <img src="" alt="" class="article-img">
+                        <p class="article-info"></p>
+                    </div>
+                </article>
+            </main>
+            
+            
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h2 class="widget-title"></h2>
+                    <img src="" alt="" class="widget-image">
+                    <p class="widget-body"></p>
+                </div>
+                <div class="sidebar-widget">
+                    <h2 class="widget-title"></h2>
+                    <div class="widget-rescent-post">
+                        <h3 class='widget-rescent-post-title'></h3>
+                        <img src="style/assets/colabottle.jpg" alt="Coca cola bottles by Andy Warhol" class="widget-image">
+                    </div>
+                    <div class="widget-rescent-post">
+                        <h3 class='widget-rescent-post-title'></h3>
+                        <img src="style/assets/soup-cans.jpg" alt="soup cans by Andy Warhol" class="widget-image">
+                    </div>
+                    <div class="widget-rescent-post">
+                        <h3 class='widget-rescent-post-title'></h3>
+                        <img src="style/assets/marilyn.jpg" alt="Marlyn by Andy Warhol" class="widget-image">
+                    </div>
+                </div>
+            </aside>
             </div>
-        </div>
-    </div>
-
-    <footer>
-        <p></p>
-        <p></p>
-    </footer>
-</body>
-</html>
+            <footer>
+                <p></p>
+                <p></p>
+            </footer>
+        </body>
+        </html>
