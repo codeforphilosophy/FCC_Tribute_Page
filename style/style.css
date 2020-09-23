@@ -42,13 +42,12 @@ Layout
     
 }
 /* just because we can re use the .container class, it is better to seperate flex properties into another class */
-.container{
+.container-nav{
     display: flex;
     justify-content: space-between;
 }
 
 header{
-    /* text-align: center; */
     background-color: #F8F8F8;
     padding: 2em 0;
     
@@ -96,14 +95,14 @@ nav{
 }
 
 /* This is wrapper  */
-#main{
+/* #main{
     background-color: #404040;
     width: 90%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
     color: #F8F8F8;
-}
+} */
 
 /* clearing after wrapper */
 #main::after{
@@ -128,7 +127,7 @@ nav{
     text-align: justify;
 }
 #small-img img{
-    float:left;
+    /* float:left; */
     width: 20%; 
     margin: 0 auto;
     padding: 1%;
@@ -160,13 +159,27 @@ Center img in parent and make it responsive */
 
 /* MEDIA QUERIES */
 
+
+
+
 /* FOR TABLET DEVICES */
 
-@media screen and (max-width:768px){
-    /* #main{
-        max-width: 768px;
-    } */
-    
+@media (max-width: 880px){
+    .container-nav{
+        flex-direction: column;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list-item{
+        margin: .5em 0;
+    }
+    header{
+        text-align: center;
+    }
+
     #img-div{
         width: 90%;
     }
@@ -176,14 +189,14 @@ Center img in parent and make it responsive */
         
     }
     
-    #small-img img{
+    /* #small-img img{
         width: 45%;
-    }
+    } */
 } 
 
 /* FOR MOBILE DEVICES */
 
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){
     
     #img-div{
         width: 98%;
@@ -197,5 +210,5 @@ Center img in parent and make it responsive */
         width: 92%;
         float: none;
     }
-} 
+}  */
 
