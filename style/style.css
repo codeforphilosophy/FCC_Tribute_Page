@@ -1,5 +1,5 @@
 body{
-    background-color: #ccc;
+    background-color: #FFF;
     font-size: 1.125rem;
     /* to ger rid of extra spacing around nav add margin 0 */
     margin: 0;
@@ -86,11 +86,11 @@ header{
     
 }
 main{
-    
+    width: 75%;
 }
 
 aside{
-
+    width: 20%;
 }
 
 
@@ -146,7 +146,7 @@ Center img in parent and make it responsive */
 
 /* MEDIA QUERIES */
 @media (max-width: 880px){
-    .container-nav{
+    .container-flex{
         flex-direction: column;
     }
     
