@@ -7,6 +7,11 @@ body{
     font-weight: 300 ;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 /* -----------
 Typografy
 -------------- */
@@ -66,11 +71,11 @@ Layout
 -------------- */
 .container{
     width: 90%;
-    margin: 0 auto;
-    
+    max-width: 900px;
+    margin: 0 auto; 
 }
 /* just because we can re use the .container class, it is better to seperate flex properties into another class */
-.container-nav{
+.container-flex{
     display: flex;
     justify-content: space-between;
 }
@@ -79,6 +84,13 @@ header{
     background-color: #F8F8F8;
     padding: 2em 0;
     
+}
+main{
+    
+}
+
+aside{
+
 }
 
 
