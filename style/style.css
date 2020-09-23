@@ -77,22 +77,27 @@ Layout
 /* just because we can re use the .container class, it is better to seperate flex properties into another class */
 .container-flex{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 header{
     background-color: #F8F8F8;
     padding: 2em 0;
-    
+    text-align: center;    
 }
-main{
-    width: 75%;
-}
+@media (min-width:675px) {
+    .container-flex{
+        flex-direction: row;
+    }
+    main{
+        width: 75%;
 
-aside{
-    width: 20%;
+    }
+    aside{
+        width: 20%;
+    }
 }
-
 
 /* -Nav bar-*/
 nav{
@@ -133,6 +138,16 @@ nav{
 .current-page:hover{
     color: #707070;
 }
+@media (max-width: 880px){
+    
+    .nav-list{
+        flex-direction: column;
+    }
+    
+    .nav-list-item{
+        margin: .5em 0;
+    } 
+}
 
 /* 
 Center img in parent and make it responsive */
@@ -142,26 +157,8 @@ Center img in parent and make it responsive */
     margin: 0 auto;
 }
 
-
-
 /* MEDIA QUERIES */
-@media (max-width: 880px){
-    .container-flex{
-        flex-direction: column;
-    }
-    
-    .nav-list{
-        flex-direction: column;
-    }
-    
-    .nav-list-item{
-        margin: .5em 0;
-    }
-    header{
-        text-align: center;
-    }
-    
-}
+
 
 
 
