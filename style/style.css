@@ -4,23 +4,30 @@ body{
     /* to ger rid of extra spacing around nav add margin 0 */
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 300 ;
 }
 
 /* -----------
 Typografy
 -------------- */
+h1,h2,h3{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+}
+
+strong{
+    font-weight: 700;
+}
 
 h1{
     padding: 0;
     margin: 0;
     margin-top: 20px;
-    color: #143774;
-    font-family: 'Lora', serif;
-    font-weight: 400;
     font-size: 2rem;
-    /* letter-spacing: 12px;
-    word-spacing: 20px; */
 }
+
+/* h1 subtitle */
 .subtitles{
     padding: 0;
     margin: 0;
@@ -32,6 +39,27 @@ h1{
     letter-spacing: 4px;
     word-spacing: 4px;
 }
+
+.article-title{
+ font-size: 1.5rem;   
+}
+
+.article-read-more, .article-info{
+    font-size: 0.875rem; 
+}
+
+.article-read-more{
+    color: #1792D2;
+    text-decoration: none;
+    font-weight: 700;
+} 
+
+.article-read-more:hover, .article-read-more:focus{
+    color: #143774;
+    text-decoration: underline;
+}
+
+
 
 /* -----------
 Layout
