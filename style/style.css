@@ -94,61 +94,6 @@ nav{
     color: #707070;
 }
 
-/* This is wrapper  */
-/* #main{
-    background-color: #404040;
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-    color: #F8F8F8;
-} */
-
-/* clearing after wrapper */
-#main::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
-/* this is header and information part */
-#info{
-    float:left;
-    width: 45%; 
-    margin: 1%;
-    padding: 1%;   
-}
-#tribute-info{
-    width: 90%;
-    max-width: 520px;
-    margin: 0 auto;
-}
-#tribute-info p{
-    text-align: justify;
-}
-#small-img img{
-    /* float:left; */
-    width: 20%; 
-    margin: 0 auto;
-    padding: 1%;
-}
-
-/* this is a picture and a caption for it */
-#img-div{
-    width: 45%;
-    margin: 1%;
-    padding: 1%;
-    text-align: center;
-    float: left;
-}
-
-
-/* this is to resume normal doc flow */
-#main div::after{
-    content: '';
-    display: block;
-    clear: both;
-}
 /* 
 Center img in parent and make it responsive */
 #image {
@@ -157,58 +102,27 @@ Center img in parent and make it responsive */
     margin: 0 auto;
 }
 
+
+
 /* MEDIA QUERIES */
-
-
-
-
-/* FOR TABLET DEVICES */
-
 @media (max-width: 880px){
     .container-nav{
         flex-direction: column;
     }
-
+    
     .nav-list{
         flex-direction: column;
     }
-
+    
     .nav-list-item{
         margin: .5em 0;
     }
     header{
         text-align: center;
     }
+    
+}
 
-    #img-div{
-        width: 90%;
-    }
-    
-    #info{
-        width: 90%; 
-        
-    }
-    
-    /* #small-img img{
-        width: 45%;
-    } */
-} 
 
-/* FOR MOBILE DEVICES */
 
-/* @media screen and (max-width:480px){
-    
-    #img-div{
-        width: 98%;
-    }
-    
-    #info{
-        width: 98%;
-    }
-    
-    #small-img img{
-        width: 92%;
-        float: none;
-    }
-}  */
 
