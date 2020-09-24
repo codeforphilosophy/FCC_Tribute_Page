@@ -203,7 +203,38 @@ Center img in parent and make it responsive */
         /* nice trick to fit img  */
         object-fit: cover;
     }
+
+    .article-featured{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #title{
+        order: 2;
+        margin-top: -45px;
+    }
+    #img-div{
+        order: 1;
+    }
+
+    #img-div{
+    order: 1;
+    }
+
+    .article-featured-main{
+        order: 3;
+    }
+
+    .article-info{
+        text-align: right;
+    }
+
+    .article-featured{
+        margin-bottom: 2em;
+    }
+
 }
+
 
 
 
