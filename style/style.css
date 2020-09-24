@@ -220,7 +220,7 @@ Center img in parent and make it responsive */
     }
     .article-img{
         width: 100%;
-        min-height: 500px;
+        min-height: 400px;
         /* nice trick to fit img  */
         object-fit: cover;
     }
@@ -232,7 +232,7 @@ Center img in parent and make it responsive */
 
     #title{
         order: 2;
-        margin-top: -45px;
+        margin-top: -20px;
     }
     #img-div{
         order: 1;
@@ -247,7 +247,12 @@ Center img in parent and make it responsive */
     }
 
     .article-info{
+        text-align: left;
+    }
+
+    .featured-article-info{
         text-align: right;
+        margin-top: 10px;
     }
 
     .article-featured{
